@@ -7,7 +7,7 @@ public class App {
         System.out.println("Por favor, digite o número da conta !");
         int numeroConta = entrada.nextInt();
 
-        entrada.nextLine();
+        entrada.nextLine(); //Quebra de linha. 
 
         System.out.println("Por favor, digite o número da Agência !");
         String agenciaConta = entrada.nextLine();
@@ -17,7 +17,7 @@ public class App {
 
         System.out.println("Por favor, digite o seu saldo!");
         String saldoStr = entrada.nextLine();
-        saldoStr = saldoStr.replace(",", ".");
+        saldoStr = saldoStr.replace(",", "."); //substituir vírgula por ponto. 
         double saldoConta = Double.parseDouble(saldoStr);
 
         ContaTerminal contaTerminal = new ContaTerminal(numeroConta, agenciaConta, nomeCliente, saldoConta);
